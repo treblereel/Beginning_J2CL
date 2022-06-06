@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>J2CL Sample Project 'App'</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css">
+
+    <script type="application/javascript" language='javascript' src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+    <script type="application/javascript" language='javascript' src='https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js'></script>
+    <script type="application/javascript" language='javascript' src='simple-xml-marshaller.js'></script>
+</head>
+<body>
+    <form style="padding-left: 50px">
+        <fieldset>
+            <legend>User fieldset example</legend>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">firstName</label>
+                <input type="text" id="firstName" class="form-control" placeholder="firstNamet">
+            </div>
+            <div class="mb-3">
+                <label for="secondName" class="form-label">secondName</label>
+                <input type="text" id="secondName" class="form-control" placeholder="secondName">
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">age</label>
+                <input type="number" id="age" class="form-control" placeholder="age">
+            </div>
+            <button type="button" id="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">XML: </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="xml"/>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
